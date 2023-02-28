@@ -1,85 +1,157 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>My Website</title>
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-			background-color: #f5f5f5;
-		}
-
-		.container {
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 20px;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: stretch;
-			justify-content: space-between;
-		}
-
-		.section {
-			flex-basis: 31%;
-			background-color: #fff;
-			margin-bottom: 20px;
-			padding: 20px;
-			box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-		}
-
-		.section h1 {
-			color: #333;
-			font-size: 24px;
-			margin-bottom: 10px;
-		}
-
-		.section p {
-			color: #555;
-			font-size: 16px;
-			line-height: 1.5;
-			margin-bottom: 0;
-		}
-
-		.section:nth-child(1) {
-			background-color: #f7cac9;
-		}
-
-		.section:nth-child(2) {
-			background-color: #92a8d1;
-		}
-
-		.section:nth-child(3) {
-			background-color: #c5e1a5;
-		}
-
-		@media (max-width: 768px) {
-			.section {
-				flex-basis: 48%;
-			}
-		}
-
-		@media (max-width: 480px) {
-			.section {
-				flex-basis: 100%;
-			}
-		}
-	</style>
+    <meta charset="utf-8">
+    <title>module2-solution</title>
 </head>
+<style>
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+    background-color: white;
+    }
+
+    h1 {
+        margin: 100px;
+        text-align: center;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 175%;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 100%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: pink;
+        border: 1px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .sub1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(214, 124, 124);
+
+    }
+
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: maroon;
+
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: brown;
+        font-family: Helvetica;
+        color: black;
+        margin: 0px;
+        height: 200px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
+</style>
+
 <body>
-	<div class="container">
-		<div class="section">
-			<h1>Section 1</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum, turpis a commodo tempor, tortor dolor congue nunc, et finibus sapien ipsum vel justo. Donec vehicula, velit non finibus aliquam, sapien lorem posuere elit, nec suscipit nulla ante a ex. Sed id metus eu magna commodo malesuada.</p>
-		</div>
-		<div class="section">
-			<h1>Section 2</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum, turpis a commodo tempor, tortor dolor congue nunc, et finibus sapien ipsum vel justo. Donec vehicula, velit non finibus aliquam, sapien lorem posuere elit, nec suscipit nulla ante a ex. Sed id metus eu magna commodo malesuada.</p>
-		</div>
-		<div class="section">
-			<h1>Section 3</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum, turpis a commodo tempor, tortor dolor congue nunc, et finibus sapien ipsum vel justo. Donec vehicula, velit non finibus aliquam, sapien lorem posuere elit, nec suscipit nulla ante a ex. Sed id metus eu magna commodo malesuada.</p>
-		</div>
-	</div>
+    <h1>1 2 3</h1>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="sub1">Section 1</p>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum, turpis a commodo tempor, tortor dolor congue nunc, et finibus sapien ipsum vel justo. Donec vehicula, velit non finibus aliquam, sapien lorem posuere elit, nec suscipit nulla ante a ex. Sed id metus eu magna commodo malesuada.
+            </p>
+        </div>
+    </section>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="sub2">Section 2</p>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum, turpis a commodo tempor, tortor dolor congue nunc, et finibus sapien ipsum vel justo. Donec vehicula, velit non finibus aliquam, sapien lorem posuere elit, nec suscipit nulla ante a ex. Sed id metus eu magna commodo malesuada.</p>
+        </div>
+    </section>
+    <section class="column-lg-4 colmn-md-12 colmn-sm-12">
+        <div>
+            <p class="sub3">Section 3</p>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum, turpis a commodo tempor, tortor dolor congue nunc, et finibus sapien ipsum vel justo. Donec vehicula, velit non finibus aliquam, sapien lorem posuere elit, nec suscipit nulla ante a ex. Sed id metus eu magna commodo malesuada.</p>
+        </div>
 </body>
+
 </html>
